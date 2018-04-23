@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce83bc7-3874-40c3-8b54-d36837dff042" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lexosoft/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotspot/images/ripple_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotspot/images/ripple_loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/ripple_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/ripple_loader.gif" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="Hotspot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Hotspot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2790">
-              <caret line="172" column="66" selection-start-line="172" selection-start-column="66" selection-end-line="172" selection-end-column="66" />
+            <state relative-caret-position="1435">
+              <caret line="182" column="36" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,25 +38,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lexosoft/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="143" column="88" selection-start-line="143" selection-start-column="88" selection-end-line="143" selection-end-column="88" />
+            <state relative-caret-position="188">
+              <caret line="117" column="59" selection-start-line="117" selection-start-column="49" selection-end-line="117" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5005#5086#0" expanded="true" />
                 <element signature="e#5005#5086#0" expanded="true" />
-                <element signature="e#8974#9009#0" expanded="true" />
-                <element signature="e#8974#9009#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ripple_loader.gif" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/images/ripple_loader.gif">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="Notifier.java" pinned="false" current-in-tab="false">
@@ -80,7 +73,7 @@
       <file leaf-file-name="CMD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="540">
               <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
             </state>
           </provider>
@@ -154,8 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,6 +175,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -348,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1524487238390</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1524492433719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524492433719</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1524492713023</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524492713023</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -363,8 +370,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010142" side_tool="true" weight="0.3290735" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34984025" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34984025" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -374,8 +381,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -388,20 +395,20 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Flutter Inspector" order="9" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32786885" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18740849" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Learn" order="6" />
@@ -409,11 +416,11 @@
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32786885" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info id="Favorites" order="7" side_tool="true" />
     </layout-to-restore>
@@ -441,6 +448,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI.java" />
     <entry file="file://$PROJECT_DIR$/src/Hotspot.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI.java" />
@@ -512,8 +526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Hotspot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="172" column="66" selection-start-line="172" selection-start-column="66" selection-end-line="172" selection-end-column="66" />
+        <state relative-caret-position="1435">
+          <caret line="182" column="36" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -530,27 +544,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="540">
           <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lexosoft/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="143" column="88" selection-start-line="143" selection-start-column="88" selection-end-line="143" selection-end-column="88" />
+        <state relative-caret-position="188">
+          <caret line="117" column="59" selection-start-line="117" selection-start-column="49" selection-end-line="117" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5005#5086#0" expanded="true" />
             <element signature="e#5005#5086#0" expanded="true" />
-            <element signature="e#8974#9009#0" expanded="true" />
-            <element signature="e#8974#9009#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ripple_loader.gif">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
