@@ -141,7 +141,7 @@ public class GUI extends JFrame {
         constriant.gridy = 2;
         constriant.weighty = 1;
         this.contentPane.add(loader, constriant);
-        loader.setIcon(new ImageIcon(this.splashLoader.getScaledInstance(100, 100, 0)));
+        loader.setIcon(new ImageIcon(GUI.class.getResource("/images/ripple_loader.gif")));
 
         //Copyright
         JLabel copyright = new JLabel("Powered by: Lexosoft");
