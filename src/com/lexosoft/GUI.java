@@ -7,9 +7,7 @@ package com.lexosoft;
 
 //Import Required classes
 import java.awt.*;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -25,7 +23,6 @@ public class GUI extends JFrame {
     //Variables/Properties Declaration
     private BufferedImage logo;
     private final Dimension size;
-    private final JFrame notifier;
     private BufferedImage splashLoader;
     private BufferedImage frameLoader;
     private Container contentPane;
@@ -37,7 +34,7 @@ public class GUI extends JFrame {
     private JPanel footerPanel;
     private JPanel userPanel;
     private JTabbedPane tabbedPane;
-    private Canvas canvas;
+    private DisplayTrayIcon trayIcon;
 
     //Method Declarations
     //Constructor
@@ -79,23 +76,8 @@ public class GUI extends JFrame {
         //This is the mini status pane
         //which displays when the close
         //button on the frame is clicked
-        this.notifier = new JFrame();
-        this.notifier.setSize(300,60);
-        this.notifier.setLocation(this.getScreenSize().width-(this.notifier.getSize().width - 10),35);
-        this.notifier.setUndecorated(true);
-        this.notifier.setAlwaysOnTop(true);
-        this.notifier.setIconImage(logo);
-        //this.notifier.setOpacity(Float.valueOf(0.5f));
-        this.notifier.setVisible(false);
-        this.notifier.setState(3);
-        this.canvas = new Notifier();
-        this.canvas.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                GUI.this.hideFrame();
-            }
-        });
-        this.notifier.add(this.canvas);
+
+
 
         //this.notifier.getContentPane().addActionListener(this.showFrame());
 
@@ -166,6 +148,18 @@ public class GUI extends JFrame {
 
     //Show sub pannel and all its component
     private void showTabbedPane(){
+        //Display system tray icon
+        try {
+            this.trayIcon = new DisplayTrayIcon(this.logo.getScaledInstance(16,16,1),
+                    "Hospify \nversion 1.0");
+            this.trayIcon.addMenu("Open",e -> {this.showFrame();});
+            this.trayIcon.addMenu("Exit",e -> {System.exit(0);});
+
+        } catch (Exception el) {
+            JOptionPane.showMessageDialog(this,el.getMessage(),
+                    "Alert",JOptionPane.WARNING_MESSAGE);
+        }
+
         this.contentPane.setLayout(new GridBagLayout());
         this.footerPanel = new JPanel();
 
@@ -208,7 +202,7 @@ public class GUI extends JFrame {
         this.constriant.fill = GridBagConstraints.BOTH;
         this.constriant.gridheight = 4;
         this.contentPane.add(tabbedPane, this.constriant);
-        tabbedPane.addTab("Services", this.servicePanel);
+        tabbedPane.addTab("Hotspot", this.servicePanel);
         tabbedPane.addTab("Users", this.userPanel);
         tabbedPane.setFont(new Font("Arial", Font.BOLD,11));
 
@@ -223,6 +217,15 @@ public class GUI extends JFrame {
         this.constriant.gridwidth = GridBagConstraints.REMAINDER;
         this.constriant.gridheight = 1;
         this.contentPane.add(this.connectionStatus, this.constriant);
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                super.windowClosing(e);
+                if(GUI.this.trayIcon.isDisplayed()){
+                    GUI.this.trayIcon.close();
+                }
+            }
+        });
 
     }
 
@@ -235,25 +238,29 @@ public class GUI extends JFrame {
     //Hide Application frame and show status pane
     private ActionListener hideFrame(){
         return e -> {
-            GUI.this.setVisible(false);
-            GUI.this.notifier.setVisible(true);
-
+            try {
+                this.trayIcon.display();
+                this.setVisible(false);
+            } catch (AWTException el) {
+                JOptionPane.showMessageDialog(this,el.getMessage(),
+                        "Alert",JOptionPane.WARNING_MESSAGE);
+            }
             //set frame location.
-            GUI.this.setLocation((GUI.this.getScreenSize().width - GUI.this.getSize().width),
-                    (GUI.this.getScreenSize().height - GUI.this.getSize().height) / 2);
+            this.setLocation((this.getScreenSize().width - this.getSize().width),
+                    (this.getScreenSize().height - this.getSize().height) / 2);
         };
     }
 
     //Open or show main application frame and or status pane fram
-    private ActionListener showFrame(){
-        return e -> {
-            GUI.this.setVisible(true);
-            GUI.this.notifier.setVisible(false);
+    private void showFrame(){
+        this.setVisible(true);
+        if(this.trayIcon.isDisplayed()){
+            this.trayIcon.close();
+        }
+        //set frame location.
+        this.setLocation((this.getScreenSize().width - this.getSize().width),
+                (this.getScreenSize().height - this.getSize().height) / 2);
 
-            //set frame location.
-            GUI.this.setLocation((GUI.this.getScreenSize().width - GUI.this.getSize().width),
-                    (GUI.this.getScreenSize().height - GUI.this.getSize().height) / 2);
-        };
 
     }
 
@@ -262,10 +269,6 @@ public class GUI extends JFrame {
         return this.servicePanel;
     }
 
-    //Get notifier pane
-    public JFrame getNotifier(){
-        return this.notifier;
-    }
 
     //Get Window Container or content pane
     public JPanel getUserPanel(){

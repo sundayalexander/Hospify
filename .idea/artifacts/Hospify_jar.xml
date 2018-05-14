@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Hospify:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Hospify_jar</output-path>
+    <root id="archive" name="Hospify.jar">
+      <element id="module-output" name="Hospify" />
+    </root>
+  </artifact>
+</component>

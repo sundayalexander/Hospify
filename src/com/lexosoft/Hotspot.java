@@ -71,8 +71,8 @@ public class Hotspot extends GUI{
      */
     public void addContent(){
         this.getServicePanel().setBackground(Color.WHITE);
-        this.hotspotName = new JTextField("Hotspot");
-        this.password = new JPasswordField();
+        this.hotspotName = new JTextField("Hospify_v1");
+        this.password = new JPasswordField("Hospify21@12");
         this.showPassword = new JCheckBox();
         this.showPassword.setText("Show Password");
         this.showPassword.setBackground(Color.WHITE);
@@ -161,10 +161,9 @@ public class Hotspot extends GUI{
             if(e.getActionCommand().trim().equals("Stop Hotspot")){
                 Hotspot.actionListener.stopHotspot(connect, this.getStatusLabel());
             }else{
-                this.showLoader();
                 Hotspot.actionListener.startHotspot(hotspotName.getText(), this.getTappedPane(), this.password,
                         connect,this.visiblePassword, this.getStatusLabel());
-                this.hideLoader();
+
             }
         });
 
@@ -184,17 +183,6 @@ public class Hotspot extends GUI{
         this.getUserPanel().setLayout(new GridBagLayout());
     }
 
-    /**
-     * This method show the Loader frame
-     */
-    public void showLoader(){
 
-    }
-    /**
-     * This method hides the load frame.
-     */
-    public void hideLoader(){
-
-    }
 
 }

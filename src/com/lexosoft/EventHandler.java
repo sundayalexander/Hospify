@@ -46,10 +46,10 @@ public class EventHandler {
     /**
      * This is a Constructor method used the initialize the
      * windows CMD class.
-     * @throws IOException
+     * @throws IOException This is thrown if the command
+     * object could not be created.
      */
     public EventHandler() throws IOException {
-
         this.cmd = new CMD();
     }
 
@@ -67,7 +67,8 @@ public class EventHandler {
         this.ssidField = ssidField;
         if(!this.cmd.getEnvirons().isEmpty()){
             this.ssidField.setText(this.cmd.getEnvirons().getProperty("ssid name").replace("\"",""));
-            this.passwordField.setText(this.cmd.getEnvirons().getProperty("key"));
+            this.key = this.cmd.getEnvirons().isEmpty()?"Hospify12@21":this.cmd.getEnvirons().getProperty("key");
+            this.passwordField.setText(this.key);
             this.statusLabel.setText("The hotspot is "+this.cmd.getProperties().getProperty("status"));
             String state = this.cmd.getProperties().getProperty("status").equalsIgnoreCase("started")?
                     "Stop Hotspot":"Start Hotspot";
@@ -108,7 +109,7 @@ public class EventHandler {
         this.statusLabel = statusLabel; this.passwordField = password;
         this.visiblePassword = visiblePassword; this.key = String.valueOf(password.getPassword());
         //get the stored key.
-        String storedKey = this.cmd.getEnvirons().isEmpty()?"Hotspot12345":this.cmd.getEnvirons().getProperty("key");
+        String storedKey = this.cmd.getEnvirons().isEmpty()?"Hospify21@12":this.cmd.getEnvirons().getProperty("key");
         try {
             //Configure and start the hostednetwork.
             if(!this.ssid.equalsIgnoreCase(this.cmd.getProperties().getProperty("ssid name"))){
@@ -121,7 +122,7 @@ public class EventHandler {
                         prop.put("key", this.key);
                         FileOutputStream output = new FileOutputStream(this.cmd.getInitFile());
                         prop.store(output,
-                                "Window Hotspot v1.0");
+                                "Hospify v1.0");
                     }else{
                         this.statusLabel.setText(this.cmd.getError());
                     }
@@ -140,7 +141,7 @@ public class EventHandler {
                         Properties prop = this.cmd.getEnvirons();
                         prop.setProperty("key", this.key);
                         prop.store(new FileOutputStream(this.cmd.getInitFile()),
-                                "Window Hotspot v1.0");
+                                "Hospify v1.0");
                     }else{
                         this.statusLabel.setText(this.cmd.getError());
                     }

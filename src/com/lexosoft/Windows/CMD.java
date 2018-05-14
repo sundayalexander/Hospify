@@ -31,7 +31,7 @@ public class CMD {
      */
     public CMD() throws IOException{
         this.runtime = Runtime.getRuntime();
-        String path = System.getenv("LOCALAPPDATA") + "/Hotspot";
+        String path = System.getenv("LOCALAPPDATA") + "/Hospify";
         this.initFile = new File(path);
         if(!this.initFile.exists()){
             this.initFile.mkdir();
@@ -157,7 +157,7 @@ public class CMD {
             reader.close();
             this.process.destroy();
         } catch (IOException ex) {
-
+            System.out.println(ex.getMessage());
         }
         return prop;
     }
