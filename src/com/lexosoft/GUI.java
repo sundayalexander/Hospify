@@ -34,7 +34,7 @@ public class GUI extends JFrame {
     private JPanel footerPanel;
     private JPanel userPanel;
     private JTabbedPane tabbedPane;
-    private DisplayTrayIcon trayIcon;
+    protected DisplayTrayIcon trayIcon;
 
     //Method Declarations
     //Constructor
@@ -73,13 +73,19 @@ public class GUI extends JFrame {
 
 
 
-        //This is the mini status pane
-        //which displays when the close
-        //button on the frame is clicked
+        //Display system tray icon
+        try {
+            this.trayIcon = new DisplayTrayIcon(this.logo.getScaledInstance(16,16,1),
+                    "Hospify \nversion 1.0");
+            this.trayIcon.addMenu("Open",e -> {this.showFrame();});
+            this.trayIcon.addMenu("Exit",e -> {System.exit(0);});
+            this.trayIcon.display();
 
 
-
-        //this.notifier.getContentPane().addActionListener(this.showFrame());
+        } catch (Exception el) {
+            JOptionPane.showMessageDialog(this,el.getMessage(),
+                    "Alert",JOptionPane.WARNING_MESSAGE);
+        }
 
         //exit operation
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -148,18 +154,6 @@ public class GUI extends JFrame {
 
     //Show sub pannel and all its component
     private void showTabbedPane(){
-        //Display system tray icon
-        try {
-            this.trayIcon = new DisplayTrayIcon(this.logo.getScaledInstance(16,16,1),
-                    "Hospify \nversion 1.0");
-            this.trayIcon.addMenu("Open",e -> {this.showFrame();});
-            this.trayIcon.addMenu("Exit",e -> {System.exit(0);});
-
-        } catch (Exception el) {
-            JOptionPane.showMessageDialog(this,el.getMessage(),
-                    "Alert",JOptionPane.WARNING_MESSAGE);
-        }
-
         this.contentPane.setLayout(new GridBagLayout());
         this.footerPanel = new JPanel();
 
@@ -217,15 +211,6 @@ public class GUI extends JFrame {
         this.constriant.gridwidth = GridBagConstraints.REMAINDER;
         this.constriant.gridheight = 1;
         this.contentPane.add(this.connectionStatus, this.constriant);
-        this.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                super.windowClosing(e);
-                if(GUI.this.trayIcon.isDisplayed()){
-                    GUI.this.trayIcon.close();
-                }
-            }
-        });
 
     }
 
@@ -238,13 +223,7 @@ public class GUI extends JFrame {
     //Hide Application frame and show status pane
     private ActionListener hideFrame(){
         return e -> {
-            try {
-                this.trayIcon.display();
-                this.setVisible(false);
-            } catch (AWTException el) {
-                JOptionPane.showMessageDialog(this,el.getMessage(),
-                        "Alert",JOptionPane.WARNING_MESSAGE);
-            }
+            this.setVisible(false);
             //set frame location.
             this.setLocation((this.getScreenSize().width - this.getSize().width),
                     (this.getScreenSize().height - this.getSize().height) / 2);
@@ -254,9 +233,6 @@ public class GUI extends JFrame {
     //Open or show main application frame and or status pane fram
     private void showFrame(){
         this.setVisible(true);
-        if(this.trayIcon.isDisplayed()){
-            this.trayIcon.close();
-        }
         //set frame location.
         this.setLocation((this.getScreenSize().width - this.getSize().width),
                 (this.getScreenSize().height - this.getSize().height) / 2);

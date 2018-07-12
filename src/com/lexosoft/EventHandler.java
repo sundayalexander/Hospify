@@ -40,7 +40,9 @@ public class EventHandler {
     private JTextField visiblePassword;
     private String key;
     private JTextField ssidField;
-    private GUI gui;
+    private Notifier notifier;
+    private DisplayTrayIcon trayIcon;
+    private Thread statusThread;
 
 
     /**
@@ -58,7 +60,8 @@ public class EventHandler {
      * Event Handler class.
      */
     public void initApp(JLabel statusLabel, JButton connectBtn, JTextField visiblePassword,
-                        JPasswordField passwordField, JTabbedPane tabbedPane, JTextField ssidField){
+                        JPasswordField passwordField, JTabbedPane tabbedPane, JTextField ssidField,
+                        DisplayTrayIcon trayIcon){
         this.connectBtn = connectBtn;
         this.passwordField = passwordField;
         this.statusLabel = statusLabel;
@@ -73,6 +76,21 @@ public class EventHandler {
             String state = this.cmd.getProperties().getProperty("status").equalsIgnoreCase("started")?
                     "Stop Hotspot":"Start Hotspot";
             this.connectBtn.setText(state);
+        }
+        this.trayIcon = trayIcon;
+        try {
+            this.notifier = new Notifier(trayIcon,this.cmd);
+            //Get Connection status
+            this.statusThread = new Thread(()->{
+                try {
+                    this.notifier.displayStatus();
+                } catch (InterruptedException e) {
+                    this.statusLabel.setText(e.getLocalizedMessage());
+                }
+            });
+            statusThread.start();
+        } catch (IOException e) {
+            this.statusLabel.setText(e.getLocalizedMessage());
         }
 
     }
@@ -104,6 +122,7 @@ public class EventHandler {
      */
     public void startHotspot(String hotspotName, JTabbedPane tabbedPane, JPasswordField password,
                              JButton connectBtn, JTextField visiblePassword, JLabel statusLabel){
+
         //Set the various components
         this.connectBtn = connectBtn; this.ssid = hotspotName; this.tabbedPane = tabbedPane;
         this.statusLabel = statusLabel; this.passwordField = password;

@@ -10,6 +10,8 @@ import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.StringTokenizer;
@@ -159,17 +161,35 @@ public class Hotspot extends GUI{
         //connect.setText(Hotspot.actionListener.getConnectionStatus());
         connect.addActionListener(e -> {
             if(e.getActionCommand().trim().equals("Stop Hotspot")){
-                Hotspot.actionListener.stopHotspot(connect, this.getStatusLabel());
+                this.actionListener.stopHotspot(connect, this.getStatusLabel());
             }else{
-                Hotspot.actionListener.startHotspot(hotspotName.getText(), this.getTappedPane(), this.password,
+                this.actionListener.startHotspot(hotspotName.getText(), this.getTappedPane(), this.password,
                         connect,this.visiblePassword, this.getStatusLabel());
 
             }
         });
 
         this.setUsersContent();
-        Hotspot.actionListener.initApp(this.getStatusLabel(), connect, this.visiblePassword,
-                this.password, this.getTappedPane(), hotspotName);
+        //System.out.println(super.trayIcon.toString());
+        this.actionListener.initApp(this.getStatusLabel(), connect, this.visiblePassword,
+                this.password, this.getTappedPane(), hotspotName,this.trayIcon);
+        this.trayIcon.addActionListener((e)->{
+            if(!this.isVisible()){
+                this.setVisible(true);
+            }
+        });
+
+        //Closing the frame
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                super.windowClosing(e);
+                if(Hotspot.this.trayIcon.isDisplayed()){
+                    Hotspot.actionListener.stopHotspot(connect,Hotspot.this.getStatusLabel());
+                    Hotspot.this.trayIcon.close();
+                }
+            }
+        });
     }
 
     /**

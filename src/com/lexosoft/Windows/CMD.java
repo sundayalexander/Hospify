@@ -118,8 +118,8 @@ public class CMD {
         this.process = this.runtime.exec("netsh wlan stop hostednetwork");
         String read;
         BufferedReader reader = new BufferedReader(new InputStreamReader(this.process.getInputStream()));
-        read = reader.readLine().trim();
-        //Get the response message
+        if((read = reader.readLine().trim()) != null){
+            //Get the response message
             if(read.equalsIgnoreCase("The hosted network stopped.")){
                 reader.close();
                 this.process.destroy();
@@ -130,6 +130,10 @@ public class CMD {
                 this.process.destroy();
                 return false;
             }
+        }else{
+            return false;
+        }
+
     }
 
     /**
