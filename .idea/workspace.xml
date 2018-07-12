@@ -7,24 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce83bc7-3874-40c3-8b54-d36837dff042" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lexosoft/Notifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/DisplayTrayIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/DisplayTrayIcon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/EventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/EventHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/GUI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/Hotspot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/Hotspot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/Windows/CMD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/com/lexosoft/Windows/CMD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotspot/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotspot/images/btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotspot/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotspot/images/radio_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotspot/images/ripple_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lexosoft/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lexosoft/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Hotspot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lexosoft/Hotspot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Hotspot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="103">
-              <caret line="175" column="46" lean-forward="true" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
+              <caret line="175" column="46" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,8 +146,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="112" />
+    <option name="x" value="74" />
+    <option name="y" value="14" />
     <option name="width" value="1156" />
     <option name="height" value="741" />
   </component>
@@ -364,11 +348,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526293396172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Alert added">
+      <created>1531399603062</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531399603062</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="112" width="1156" height="741" extended-state="0" />
+    <frame x="74" y="14" width="1156" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -378,8 +369,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010142" side_tool="true" weight="0.3290735" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34984025" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -389,8 +380,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4989858" weight="0.3258786" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,12 +394,13 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Image Layers" order="3" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34984025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="right" id="Flutter Inspector" order="4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
@@ -418,10 +410,11 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010142" side_tool="true" weight="0.3290735" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14385965" />
       <window_info anchor="right" id="Flutter Outline" order="10" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14385965" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989858" weight="0.3258786" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -429,8 +422,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
@@ -452,7 +443,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="directory update" />
     <MESSAGE value="System tray icon feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="System tray icon feature added" />
+    <MESSAGE value="Alert added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alert added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -493,31 +485,13 @@
     <entry file="file://$PROJECT_DIR$/../WindowsHotspot/src/windowshotspot/EventHandler.java" />
     <entry file="file://$PROJECT_DIR$/../WindowsHotspot/src/windowshotspot/GUI.java" />
     <entry file="file://$PROJECT_DIR$/../WindowsHotspot/src/windowshotspot/WindowsHotspot.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Runnable.java" />
     <entry file="file://$PROJECT_DIR$/src/Windows/CMD.java" />
     <entry file="file://$PROJECT_DIR$/src/EventHandler.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/javax/swing/JLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="594" selection-start-line="594" selection-end-line="594" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/javax/swing/JLabel.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI.java" />
     <entry file="file://$PROJECT_DIR$/src/Hotspot.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/sun/awt/SunToolkit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="649" selection-start-line="649" selection-end-line="649" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/sun/awt/SunToolkit.java" />
     <entry file="file://$PROJECT_DIR$/src/values/settings.ini" />
     <entry file="file://$PROJECT_DIR$/out/production/Hotspot/values/settings.ini" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
@@ -567,7 +541,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Hotspot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
-          <caret line="175" column="46" lean-forward="true" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
+          <caret line="175" column="46" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
