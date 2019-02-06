@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.Icon?>-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="711.0" style="-fx-background-color: #004E77;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sunday.controller.HotspotServiceController">
+   <children>
+      <HBox layoutX="37.0" layoutY="70.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="384.0" prefWidth="643.0">
+               <children>
+                  <Label fx:id="statusPane" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="606.0" text="Hotspot not started" textFill="#f80202">
+                     <font>
+                        <Font name="Bauhaus" size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="togglePowerBtn" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#toggleOnOff" prefHeight="223.0" prefWidth="223.0" style="-fx-background-color: #004E77;" styleClass="togglePowerBtnOn" text=" ">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="472.0">
+                     <children>
+                        <Label fx:id="deviceCount" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="41.0" text="0" textAlignment="CENTER" textFill="#ddd8d8">
+                           <font>
+                              <Font name="De La Fuente" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="281.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" text="device connected!" textFill="#ddd8d8">
+                           <font>
+                              <Font name="De La Fuente" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="23.0" layoutY="11.0" text="Hospify" textFill="WHITE" AnchorPane.bottomAnchor="448.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="527.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="AROMA Bold" size="28.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <HBox alignment="TOP_RIGHT" blendMode="LIGHTEN" layoutX="604.0" prefHeight="35.0" prefWidth="107.0" AnchorPane.bottomAnchor="454.0" AnchorPane.leftAnchor="604.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="hideBtn" contentDisplay="CENTER" onAction="#hideStage" prefHeight="35.0" prefWidth="48.0" styleClass="hideBtn" text=" " />
+            <JFXButton fx:id="closeBtn" alignment="CENTER_RIGHT" cancelButton="true" contentDisplay="CENTER" onAction="#closeStage" prefHeight="35.0" prefWidth="48.0" styleClass="closeBtn" text=" " />
+         </children>
+      </HBox>
+      <Label fx:id="alertPane" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-6.0" layoutY="85.0" prefHeight="43.0" prefWidth="723.0" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus" size="19.0" />
+         </font>
+      </Label>
+      <VBox fx:id="menuBg" alignment="TOP_RIGHT" layoutX="570.0" layoutY="107.0" onMouseEntered="#showMenu" onMouseExited="#HideMenu" prefHeight="193.0" prefWidth="146.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="570.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="107.0">
+         <children>
+            <Label fx:id="menuCaption" alignment="TOP_RIGHT" styleClass="menuView" text="Menu" textFill="#eeebeb">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <!--<Icon content="ARROW_BACK" />-->
+               </graphic>
+               <VBox.margin>
+                  <Insets right="-4.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+               </padding>
+            </Label>
+            <VBox fx:id="menuBar" alignment="TOP_RIGHT" blendMode="SRC_ATOP" prefHeight="163.0" prefWidth="154.0">
+               <children>
+                  <JFXButton fx:id="settingMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#gotoHotspotSetting" prefHeight="37.0" prefWidth="140.0" styleClass="menus" text="Setting" textAlignment="RIGHT" textFill="WHITESMOKE">
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <!--<Icon content="SETTINGS" />-->
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="devicesMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="37.0" prefWidth="140.0" styleClass="menus" text="Connected Devices" textAlignment="RIGHT" textFill="#f5f5f5">
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <!--<Icon content="LAPTOP_MAC" />-->
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="restartMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#restartHotspot" prefHeight="37.0" prefWidth="140.0" styleClass="menus" text="Restart Hotspot" textAlignment="RIGHT" textFill="#f5f5f5">
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <!--<Icon content="REPLAY" />-->
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="helpMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="37.0" prefWidth="140.0" styleClass="menus" text="Help" textAlignment="RIGHT" textFill="#f5f5f5">
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <!--<Icon content="HELP_OUTLINE" />-->
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <effect>
+                  <DropShadow color="#393939" height="29.9" radius="13.7075" spread="0.05" width="26.93" />
+               </effect>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

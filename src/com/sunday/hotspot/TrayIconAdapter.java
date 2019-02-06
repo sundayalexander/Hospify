@@ -1,17 +1,16 @@
-package com.lexosoft;
+package com.sunday.hotspot;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
- * This is a DisplayTrayIcon class
+ * This is a TrayIconAdapter class
  *
  * @author Amowe Sunday Alexander
  * @version v1.0
  * @date: 5/13/2018 @12:25 AM
  */
-public class DisplayTrayIcon {
+public class TrayIconAdapter {
     //Class properties goes here
     private TrayIcon trayIcon;
     private Image image;
@@ -35,7 +34,7 @@ public class DisplayTrayIcon {
      * the system tray icon could not be
      * created.
      */
-    public DisplayTrayIcon(Image image, String trayTitle) throws Exception{
+    public TrayIconAdapter(Image image, String trayTitle) throws Exception{
         this.displayed = false;
         this.image = image;
         //Constructor logic goes here

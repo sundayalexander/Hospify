@@ -1,0 +1,53 @@
+.textField{
+    -fx-text-fill: #b5b5b5;
+}
+.closeBtn:hover{
+    -fx-background-color: #0080C0;
+     -fx-border-color: #0080C0;
+    -fx-background-image: url("../images/close-02.png");
+}
+.closeBtn{
+    -fx-background-color: #004E77;
+    -fx-background-image: url("../images/close-03.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.togglePowerBtnOn{
+     -fx-background-color: #004E77;
+        -fx-background-image: url("../images/power-on.png");
+        -fx-background-size: 40%;
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+}
+
+.hideBtn:hover{
+    -fx-background-color: #0080C0;
+    -fx-border-color: #0080C0;
+    -fx-background-image: url("../images/hide-icon-02.png");
+}
+.hideBtn{
+    -fx-background-color: #004E77;
+    -fx-background-image: url("../images/hide-icon-01.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.menuBtn{
+    -fx-background-color: #004E77;
+}
+.menuView{
+   -fx-border-radius: 5px 0px 0px 5px;
+   -fx-border-with: 2px 0px;
+   -fx-border-color: #0080C0;
+   -fx-border-right: none;
+   -fx-background-color: #0080C0;
+}
+.menus{
+    -fx-background-color: #0080C0;
+    -fx-border-color: #0080C0;
+}
+.menus:hover{
+    -fx-background-color: #0097DF;
+     -fx-border-color: #0097DF;
+}

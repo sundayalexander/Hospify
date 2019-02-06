@@ -1,6 +1,4 @@
-package com.lexosoft.Windows;
-
-import jdk.management.resource.ResourceRequest;
+package com.sunday.hotspot;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -9,18 +7,15 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 /**
- * This is a Windows command prompt class.
+ * This is a command prompt class.
  * This class is used to work with window
  * related command via the net share interface.
  * @author Amowe Sunday Alexander
  */
 
-public class CMD {
-    private Properties environs;
+public class CMDAdapter implements Terminal{
     private Runtime runtime;
-    private File initFile;
     private Process process;
-    private String setError;
 
 
     /**
@@ -29,24 +24,8 @@ public class CMD {
      * @throws IOException this is thrown if the method could not perform
      * IO operation on the file.
      */
-    public CMD() throws IOException{
+    public CMDAdapter(){
         this.runtime = Runtime.getRuntime();
-        String path = System.getenv("LOCALAPPDATA") + "/Hospify";
-        this.initFile = new File(path);
-        if(!this.initFile.exists()){
-            this.initFile.mkdir();
-            path = path + "/settings.ini";
-            this.initFile = new File(path);
-            this.initFile.createNewFile();
-        }else{
-            path = path + "/settings.ini";
-            this.initFile = new File(path);
-            if(!this.initFile.exists()){
-                this.initFile.createNewFile();
-            }
-        }
-        this.environs = new Properties();
-        this.environs.load(new FileInputStream(this.initFile));
     }
 
     /**
@@ -85,7 +64,7 @@ public class CMD {
      * @throws IOException This is thrown if the method
      * could not perform IO operation.
      */
-    public Boolean startHostednetwork() throws IOException {
+    public boolean startNetwork() throws IOException {
         this.process = this.runtime.exec("net start sharedaccess");
         this.process.destroy();
         this.process = this.runtime.exec("netsh wlan start hostednetwork");
@@ -97,10 +76,7 @@ public class CMD {
             this.process.destroy();
             return true;
         }else{
-            this.setError = reader.readLine().trim();
-            reader.close();
-            this.process.destroy();
-            return false;
+            throw new InterruptedIOException(read);
         }
     }
 
@@ -112,7 +88,7 @@ public class CMD {
      * not perform read operation on the returned stream
      * by the process.
      */
-    public Boolean stopHostednetwork() throws IOException {
+    public boolean stopNetwork() throws IOException {
         this.process = this.runtime.exec("net stop sharedaccess");
         this.process.destroy();
         this.process = this.runtime.exec("netsh wlan stop hostednetwork");
@@ -125,10 +101,7 @@ public class CMD {
                 this.process.destroy();
                 return true;
             }else{
-                this.setError = read;
-                reader.close();
-                this.process.destroy();
-                return false;
+                throw new InterruptedIOException(read);
             }
         }else{
             return false;
@@ -142,7 +115,8 @@ public class CMD {
      * status it returns Properties object, otherwise
      * null is return.
      */
-    public Properties getProperties(){
+    @Override
+    public Properties getConfiguration(){
         Properties prop = null;
         try {
             this.process = this.runtime.exec("netsh wlan show hostednetwork");
@@ -161,7 +135,7 @@ public class CMD {
             reader.close();
             this.process.destroy();
         } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+
         }
         return prop;
     }
@@ -169,98 +143,66 @@ public class CMD {
     /**
      * This set the hostednetwork properties such as the
      * mode, ssid, and key
-     * @param mode The mode of the ssid which could assume
-     *             one of the following values: allow, disallow.
-     * @param ssid The Name of the network which will be
-     *             used to connect and identify the network.
-     * @param password The password or key of the hostednetwork.
-     * @return This is set to true if all the parameters are
-     *          successfully configured, otherwise false.
      * @throws IOException This is thrown if the method
      * could not perform the required read operation
-     * from the terminal.
+     * from the hotspot.
      */
-
-    public Boolean setHostednetwork(String mode, String ssid, String password) throws IOException {
-        BufferedReader reader = this.execute("netsh wlan set hostednetwork mode="+mode);
+    @Override
+    public void setConfiguration(Properties properties) throws IOException {
+        BufferedReader reader = this.execute("netsh wlan set hostednetwork mode="+properties.getProperty("mode"));
         String read = reader.readLine().trim();
         if(read.endsWith("The hosted network mode has been set to allow.")){
             this.killProcess();
-            reader = this.execute("netsh wlan set hostednetwork key="+password);
+            reader = this.execute("netsh wlan set hostednetwork key="+properties.getProperty("password"));
             read = reader.readLine().trim();
             System.out.println(reader.readLine());
             if (read.endsWith("The user key passphrase of the hosted network has been successfully changed.")){
                 this.killProcess();
-                reader = this.execute("netsh wlan set hostednetwork ssid="+ssid);
+                reader = this.execute("netsh wlan set hostednetwork ssid="+properties.getProperty("ssid"));
                 read = reader.readLine().trim();
                 if (read.endsWith("The SSID of the hosted network has been successfully changed.")){
                     this.killProcess();
                 }else{
-                    this.setError = read;
-                    return false;
+                    throw new InterruptedIOException(read);
                 }
             }else{
-                setError = read;
-                return false;
+                throw new InterruptedIOException(read);
             }
         }else {
-            this.setError = read;
-            return false;
+            throw new InterruptedIOException(read);
         }
-        return true;
-    }
 
-    public Boolean setHostednetwork(String key, String value) throws IOException {
-        BufferedReader reader = this.execute("netsh wlan set hostednetwork "+key+"="+value);
+    }
+    
+
+    /**
+     * @throws IOException
+     */
+    @Override
+    public void setConfiguration(String key, String value) throws IOException {
+        BufferedReader reader;
+        if(key.equalsIgnoreCase("password")){
+            reader = this.execute("netsh wlan set hostednetwork key="+value);
+        }else{
+            reader = this.execute("netsh wlan set hostednetwork "+key+"="+value);
+        }
         String read = reader.readLine().trim();
         if (read.endsWith("The user key passphrase of the hosted network has been successfully changed.") ||
                 read.endsWith("The user key passphrase of the hosted network has been successfully changed.") ||
                 read.endsWith("The SSID of the hosted network has been successfully changed.")){
             this.killProcess();
-            return true;
         }else{
-            this.setError = read;
-            return false;
+            throw new InterruptedIOException(read);
         }
     }
 
     /**
-     * This returns the hostednetwork error message.
-     * @return The Occured error.
+     *
+     * @return
+     * @throws IOException
      */
-    public String getError(){
-        return this.setError;
-    }
-
-    /**
-     * This method returns the properties of the previously
-     * hostednetwork settings.
-     * @return Properties of the hostednetwork
-     */
-
-    public Properties getEnvirons(){
-        return this.environs;
-    }
-
-    /**
-     * This method returns the Initialization file
-     * for necessary File IO operations.
-     * @return File object.
-     */
-    public File getInitFile(){
-        return this.initFile;
-    }
-
-    /**
-     * This method returns the list of adapters and it
-     * connection properties.
-     * @return This is the list of adapters and with its
-     * various properties.
-     * @throws IOException This is thrown if the method
-     * could not get response from the terminal
-     */
-
-    public ArrayList<String> getAdapters() throws IOException {
+    @Override
+    public ArrayList<String> getNetworks() throws IOException {
         BufferedReader reader = this.execute("netsh interface show interface");
         StringTokenizer tokens;
         String read;
@@ -276,7 +218,7 @@ public class CMD {
                     reverse.push(tokens.nextToken().trim().concat(" "));
                 }
                 while(!reverse.empty()){
-                   buffer.append(reverse.pop());
+                    buffer.append(reverse.pop());
                 }
 
                 if(!buffer.toString().equalsIgnoreCase(" ")) {
@@ -306,4 +248,14 @@ public class CMD {
         this.killProcess();
         return adapters;
     }
+
+    /**
+     *
+     * @return InputStream
+     */
+    public InputStream getLog(){
+        return this.process.getInputStream();
+    }
+
+
 }

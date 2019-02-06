@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="711.0" style="-fx-background-color: #004062;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sunday.controller.SplashScreenController">
+   <children>
+      <Label layoutX="216.0" layoutY="9.0" prefHeight="100.0" prefWidth="347.0" text="HOSPIFY" textFill="WHITE">
+         <font>
+            <Font name="AROMA Bold" size="52.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="icon" fitHeight="55.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="505.0" layoutY="55.0" prefHeight="29.0" prefWidth="33.0" text="2018" textFill="#fffbfb">
+         <font>
+            <Font name="Akura Popo" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="166.0" fitWidth="172.0" layoutX="280.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ripple_loader.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="status" layoutX="277.0" layoutY="258.0" text="Configuring Required Hardware ..." textFill="#fffbfb">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="460.0" text="...Connect, Share, Recieve files with ease ..." textFill="#fffbfb">
+         <font>
+            <Font name="Bauhaus" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="381.0" text="Beta version.." textFill="#fffbfb">
+         <font>
+            <Font name="Butler-Black" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

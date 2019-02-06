@@ -6,9 +6,44 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce83bc7-3874-40c3-8b54-d36837dff042" name="Default" comment="">
+    <list default="true" id="cce83bc7-3874-40c3-8b54-d36837dff042" name="Default" comment="Alert added">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_9_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/Hospify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/ConnectDeviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/HotspotServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/hotspot/Hotspot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sunday/hotspot/Terminal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/layout/connectedDevice.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/layout/hotspotConfig.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/layout/hotspotService.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/layout/splashScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/layout/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Hospify_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Hospify_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hospify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hospify.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hospify/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/radio_loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/ripple_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/images/ripple_loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/DisplayTrayIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sunday/hotspot/TrayIconAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/EventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/GUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Hotspot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/ripple_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/images/ripple_loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/images/btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/images/radio_loader.gif" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,15 +57,16 @@
     <option name="refreshEnabled" value="true" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Hospify$Hospify.ic" NAME="Hospify Coverage Results" MODIFIED="1549013402333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Hotspot$Hotspot.coverage" NAME="Hotspot Coverage Results" MODIFIED="1522005745440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Hotspot.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Hotspot.java">
+      <file leaf-file-name="HotspotServiceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="175" column="46" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
+            <state relative-caret-position="5418">
+              <caret line="334" column="79" selection-start-line="334" selection-start-column="79" selection-end-line="334" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lexosoft/GUI.java">
+      <file leaf-file-name="SplashScreenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3654">
-              <caret line="212" column="69" selection-start-line="212" selection-start-column="69" selection-end-line="212" selection-end-column="69" />
+            <state relative-caret-position="2034">
+              <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,20 +86,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lexosoft/EventHandler.java">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/res/layout/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+            <state relative-caret-position="666">
+              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Notifier.java">
+      <file leaf-file-name="ScreenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+            <state relative-caret-position="3078">
+              <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,20 +107,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayTrayIcon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lexosoft/DisplayTrayIcon.java">
+      <file leaf-file-name="HotspotConfigController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            <state relative-caret-position="227">
+              <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java">
+      <file leaf-file-name="Hospify.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sunday/Hospify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2286">
-              <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+            <state relative-caret-position="18">
+              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +136,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="XSLT Stylesheet" />
       </list>
     </option>
   </component>
@@ -103,9 +149,26 @@
       <find>miniPane</find>
       <find>notifier</find>
       <find>trayicon</find>
+      <find>this.initFile</find>
+      <find>this.cmd</find>
+      <find>powerImageREd</find>
+      <find>this.fadeTransition</find>
+      <find>print</find>
+      <find>this.statuPane</find>
+      <find>power</find>
+      <find>addScreen</find>
+      <find>setError</find>
+      <find>terminal</find>
     </findStrings>
     <replaceStrings>
       <replace>notifier</replace>
+      <replace>file</replace>
+      <replace>this.terminal</replace>
+      <replace>powerImageOff</replace>
+      <replace>this.fadeOut</replace>
+      <replace>this.statusPane</replace>
+      <replace>error</replace>
+      <replace>hotspot</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -134,21 +197,49 @@
         <option value="$PROJECT_DIR$/src/com/lexosoft/hotspot/GUI.java" />
         <option value="$PROJECT_DIR$/src/com/hotspot/hotspot/GUI.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
         <option value="$PROJECT_DIR$/src/com/lexosoft/Canvas.java" />
         <option value="$PROJECT_DIR$/src/com/lexosoft/DisplayTrayIcon.java" />
         <option value="$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java" />
         <option value="$PROJECT_DIR$/src/com/lexosoft/Notifier.java" />
-        <option value="$PROJECT_DIR$/src/com/lexosoft/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/com/lexosoft/GUI.java" />
+        <option value="$PROJECT_DIR$/src/com/lexosoft/SplashSCreen.java" />
         <option value="$PROJECT_DIR$/src/com/lexosoft/Hotspot.java" />
+        <option value="$PROJECT_DIR$/src/com/lexosoft/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/lexosoft/controller/SplashScreenController.java" />
+        <option value="$PROJECT_DIR$/src/res/layout/splashScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/com/sunday/model/DisplayTrayIcon.java" />
+        <option value="$PROJECT_DIR$/src/res/layout/connectedDevice.fxml" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/ServiceController.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/spotServiceController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
+        <option value="$PROJECT_DIR$/src/com/sunday/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/model/CMD.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/Hotspot.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/terminal/Terminal.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/hotspot/CMD.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/hotspot/Terminal.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/hotspot/CMDAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/hotspot/HotspotAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/ConnectDeviceController.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/hotspot/Hotspot.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/hotspot/TrayIconAdapter.java" />
+        <option value="$PROJECT_DIR$/src/res/layout/hotspotConfig.fxml" />
+        <option value="$PROJECT_DIR$/src/res/layout/hotspotService.fxml" />
+        <option value="$PROJECT_DIR$/src/res/layout/namr.xsl" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java" />
+        <option value="$PROJECT_DIR$/src/res/layout/style.css" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/Hospify.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/HotspotServiceController.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="14" />
-    <option name="width" value="1156" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="12" />
+    <option name="y" value="6" />
+    <option name="width" value="1176" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -156,21 +247,93 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <showMembers ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sunday" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sunday" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sunday" type="462c0819:PsiDirectoryNode" />
+              <item name="hotspot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospify" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="settings&#9;PSI&#9;JAVA://EventHandler#settings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MaHome\Documents\Java Project\Hospify\src\res\images" />
       <recent name="C:\Users\MaHome\Documents\Java Project\Hotspot\src" />
       <recent name="C:\Users\MaHome\Documents\Java Project\Hotspot\src\images" />
       <recent name="C:\Users\MaHome\Documents\Java Project\Hotspot\src\com\lexosoft\hotspot" />
@@ -193,23 +356,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration name="Hospify" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.lexosoft.Hotspot" />
+      <option name="MAIN_CLASS_NAME" value="com.sunday.Hospify" />
       <module name="Hospify" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method>
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Hospify:jar" />
+        </option>
       </method>
-    </configuration>
-    <configuration name="Hotspot" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.lexosoft.hotspot.Hotspot" />
-      <module name="Hotspot" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lexosoft.hotspot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -233,8 +387,7 @@
     <configuration name="Hospify" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" />
       <option name="WORKING_DIRECTORY" value="C:\Users\MaHome\Documents\Java Project\Hospify" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="9.0" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Hospify:jar" />
@@ -278,7 +431,6 @@
     </configuration>
     <list>
       <item itemvalue="JAR Application.Hospify" />
-      <item itemvalue="Application.Hotspot" />
       <item itemvalue="Application.Hospify" />
     </list>
     <recent_temporary>
@@ -359,7 +511,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="14" width="1156" height="741" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -367,40 +519,39 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010142" side_tool="true" weight="0.3290735" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014493" side_tool="true" weight="0.32569557" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34984025" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985507" weight="0.30428135" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14385965" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16032211" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4989858" weight="0.3258786" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4989858" weight="0.32568806" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.329429" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32796487" />
       <window_info anchor="right" id="Flutter Outline" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32568806" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Image Layers" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34984025" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3258595" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Flutter Inspector" order="4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
@@ -410,20 +561,21 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010142" side_tool="true" weight="0.3290735" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14385965" />
       <window_info anchor="right" id="Flutter Outline" order="10" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21888727" />
       <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989858" weight="0.3258786" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989858" weight="0.3258595" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399361" />
     </layout-to-restore>
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -448,27 +600,47 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url />
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/Hotspot.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/EventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/values/settings.ini" />
-    <entry file="file://$PROJECT_DIR$/src/Windows/CMD.java" />
-    <entry file="file://$PROJECT_DIR$/src/Hotspot.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/EventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/Windows/CMD.java" />
-    <entry file="file://$PROJECT_DIR$/src/values/settings.ini" />
-    <entry file="file://$PROJECT_DIR$/src/Hotspot.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/EventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/values/settings.ini" />
-    <entry file="file://$PROJECT_DIR$/src/Windows/CMD.java" />
-    <entry file="file://$PROJECT_DIR$/src/Hotspot.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3492">
+          <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3384">
+          <caret line="188" column="38" selection-start-line="188" selection-start-column="38" selection-end-line="188" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/Hospify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI.java" />
     <entry file="file://$PROJECT_DIR$/src/Windows/CMD.java" />
     <entry file="file://$PROJECT_DIR$/src/EventHandler.java" />
@@ -495,53 +667,121 @@
     <entry file="file://$PROJECT_DIR$/src/values/settings.ini" />
     <entry file="file://$PROJECT_DIR$/out/production/Hotspot/values/settings.ini" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
     <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Canvas.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/DisplayTrayIcon.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        <state relative-caret-position="3656">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java">
+    <entry file="file://$PROJECT_DIR$/Hospify.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2286">
-          <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+        <state relative-caret-position="108">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Notifier.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/model/Notifier.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/spotServiceController.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/EventHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/GUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/hotspot/Terminal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+        <state relative-caret-position="360">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/hotspot/HotspotAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/hotspot/CMDAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1908">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ConnectDeviceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="38" column="11" selection-start-line="34" selection-start-column="10" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/hotspot/Hotspot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="106" column="39" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/res/layout/namr.xsl" />
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/hotspot/TrayIconAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2034">
+          <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/EventHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+        <state relative-caret-position="129">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3654">
-          <caret line="212" column="69" selection-start-line="212" selection-start-column="69" selection-end-line="212" selection-end-column="69" />
+        <state relative-caret-position="3078">
+          <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lexosoft/Hotspot.java">
+    <entry file="file://$PROJECT_DIR$/src/res/layout/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="175" column="46" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
+        <state relative-caret-position="666">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5418">
+          <caret line="334" column="79" selection-start-line="334" selection-start-column="79" selection-end-line="334" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/Hospify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -553,7 +793,12 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
           <last-edited>Hospify:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -602,7 +847,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -627,6 +872,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>controlsfx-9.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
