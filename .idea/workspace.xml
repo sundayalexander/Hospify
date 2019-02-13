@@ -7,43 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce83bc7-3874-40c3-8b54-d36837dff042" name="Default" comment="Alert added">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_9_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/Hospify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/ConnectDeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/HotspotServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/hotspot/Hotspot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sunday/hotspot/Terminal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/layout/connectedDevice.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/layout/hotspotConfig.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/layout/hotspotService.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/layout/splashScreen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/layout/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Hospify_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Hospify_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hospify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hospify.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Hospify_jar/Hospify.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/radio_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hospify/images/ripple_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hospify/images/ripple_loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/DisplayTrayIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sunday/hotspot/TrayIconAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/EventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/GUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Hotspot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Notifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lexosoft/Windows/CMD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/ripple_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/images/ripple_loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/images/btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/images/radio_loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sunday/Hospify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sunday/Hospify.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,6 +51,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ControllerAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/res/layout/style.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScreenController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScreenController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3078">
-              <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
+            <state relative-caret-position="18">
+              <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,7 +84,7 @@
       <file leaf-file-name="HotspotConfigController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="2214">
               <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hospify.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hospify.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sunday/Hospify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="1566">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -230,9 +204,9 @@
         <option value="$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java" />
         <option value="$PROJECT_DIR$/src/res/layout/style.css" />
         <option value="$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java" />
-        <option value="$PROJECT_DIR$/src/com/sunday/Hospify.java" />
         <option value="$PROJECT_DIR$/src/com/sunday/controller/HotspotServiceController.java" />
         <option value="$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java" />
+        <option value="$PROJECT_DIR$/src/com/sunday/Hospify.java" />
       </list>
     </option>
   </component>
@@ -252,9 +226,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -512,7 +486,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -526,7 +499,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16032211" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16032211" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -546,12 +519,13 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32568806" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Image Layers" order="3" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3258595" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="right" id="Flutter Inspector" order="4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290735" />
@@ -561,10 +535,11 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010142" side_tool="true" weight="0.3290735" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Flutter Outline" order="10" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21888727" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989858" weight="0.3258595" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -572,8 +547,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399361" />
     </layout-to-restore>
@@ -613,8 +586,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3492">
-          <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
+        <state relative-caret-position="2448">
+          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -724,33 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2034">
-          <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3078">
-          <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/res/layout/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
@@ -770,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/HotspotConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="2214">
           <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -778,10 +724,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/SplashScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2034">
+          <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ControllerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sunday/Hospify.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sunday/controller/ScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
